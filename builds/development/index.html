@@ -1,14 +1,19 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Angular Data</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div class="page">
-  <main class="cf">
-  </main>
-</div>
-</body>
+<html lang="en" ng-app>
+	<head>
+		<meta charset="UTF-8">
+		<title>Angular Data</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/lib/angular/angular.min.js"></script>
+		<script src="js/lib/angular/angular-route.min.js"></script>
+		<script src="js/lib/angular/angular-animate.min.js"></script>
+	</head>
+	<body>
+		<div class="page">
+			<main class="cf">
+				<h1>Hello {{name}}</h1>
+				<input type="text" ng-model="name" placeholder="enter your name">
+			</main>
+		</div>
+	</body>
 </html>
