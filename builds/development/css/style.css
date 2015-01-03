@@ -94,9 +94,9 @@ main {
   border: 2px solid #fc756d;
   width: 80%;
   min-width: 310px;
-  max-width: 700px;
+  max-width: 400px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 20px 30px;
   text-align: center;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 4px 0px black;
@@ -167,9 +167,11 @@ input {
   font-size: 1rem;
   color: #475B62;
   background: rgba(255,255,255,0.4);
-  border: 1px solid white;
+  border: 1px solid #ffbf73;
   border-radius: 4px;
   outline: 0;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 input[type=radio] {
@@ -190,12 +192,14 @@ input[type=radio] {
   height: 0;
   overflow: hidden;
 }
-*/
+
 
 p.error {
-  color: #C61C6F;
+  color: #e40d00;
   font-size: .8em;
   padding-top: 5px;
+  margin-bottom: 1em;
+  font-style: italic;
 }
 
 /*buttons*/
@@ -208,7 +212,8 @@ p.error {
 .btn {
     display: inline-block;
     padding: 6px 12px;
-    margin-bottom: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
     font-size: 1rem;
     line-height: 140%;
     text-align: center;
@@ -220,7 +225,7 @@ p.error {
     border-radius: 4px;
     background: #C61C6F;
     color: #FCF4DC;
-    background-color: #14566A;
+    background-color: #26a7cf;
     background-size: 18px 18px;
     min-width: 28px;
     min-height: 28px;
