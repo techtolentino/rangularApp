@@ -446,6 +446,7 @@ ul.awardslist li .btn-delete {
 nav {
   width: 100%;
   background: transparent;
+  margin-bottom: 50px;
 }
 
 nav .table {
