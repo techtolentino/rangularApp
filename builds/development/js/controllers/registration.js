@@ -1,3 +1,10 @@
-myApp.controller('RegistrationController', function($scope){
-	$scope.name = 'Randy';
+myApp.controller('RegistrationController',
+	function($scope, $location){
+
+
+	$scope.login = function() {
+		
+		$location.path('/meetings');
+	}; //login
+
 }); // Registration Controller

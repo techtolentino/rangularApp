@@ -1,6 +1,9 @@
 <section class="login">
-	<form name="myform" novalidate>
-		<h1>Hi there! {{name}}</h1>
+	<form name="myform"
+		ng-submit="login()"
+		novalidate>
+
+		<h1>Hi there!</h1>
 		<p>Log-in to access site features!</p>
 
 		<input type="email" name="email" placeholder="Email" autofocus
