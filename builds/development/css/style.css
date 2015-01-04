@@ -213,7 +213,7 @@ p.error {
 
 .btn {
     display: inline-block;
-    padding: 6px 12px;
+    padding: 3px 12px;
     margin-bottom: 1em;
     margin-top: 1em;
     font-size: 1rem;
@@ -534,6 +534,7 @@ nav ul li a:hover {
 
 .meetings h2 {
   padding-bottom: 15px;
+  color: #145266;
 }
 
 .meetings .meeting {
