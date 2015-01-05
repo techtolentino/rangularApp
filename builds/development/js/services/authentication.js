@@ -10,7 +10,13 @@ myApp.factory('Authentication', function($firebase,
 				email: user.email,
 				password: user.password
 			});
-		} //login
+		}, //login
+
+		logout: function(){
+			return simpleLogin.$logout();
+		} //logout
+
+
 	}; //myObject
 
 	return myObject;
