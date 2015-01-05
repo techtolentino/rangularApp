@@ -6,15 +6,15 @@
 		ng-submit="addMeeting()"
 		novalidate>
 
-	<div class="inputwrapper">
-		<input type="text" name="meetingname" placeholder="Meeting Name" 
-		ng-model="meetingname"
-		ng-required="true">
-	</div>
-	<button class="btn" type="submit" 
-	ng-disabled="myform.$invalid">+</button>
-
+		<div class="inputwrapper">
+			<input type="text" name="meetingname" placeholder="Meeting Name" 
+			ng-model="meetingname"
+			ng-required="true">
+		</div>
+		<button class="btn" type="submit" 
+			ng-disabled="myform.$invalid">+</button>
 	</form>
+
 
 	<h2>Your Meetings</h2>
 	<div class="meeting" ng-repeat="(key, meeting) in meetings">

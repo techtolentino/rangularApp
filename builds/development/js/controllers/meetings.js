@@ -1,5 +1,6 @@
 myApp.controller('MeetingsController',
 	function($scope, $firebase){
+	// adding dependency to Controller
 
 	var ref = new Firebase('https://meetingpoint.firebaseio.com/meetings');
 	var meetings = $firebase(ref);
