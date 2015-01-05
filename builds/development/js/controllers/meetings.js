@@ -13,6 +13,10 @@ myApp.controller('MeetingsController',
 		}).then(function(){
 			$scope.meetingname = '';
 		});
-	};
+	}; //add meeting
+
+	$scope.deleteMeeting = function(key) {
+		meetings.$remove(key);
+	} //delete meeting
 
 });
