@@ -549,11 +549,11 @@ nav ul li a:hover {
 
 .meetings .meeting {
   display: inline-block;
-  background: #b8efff;
+  background: #E4F8FC;
   padding: 0 20px;
   margin: 5px 10px;
   border-radius: 4px;
-  border: 1px solid #2c86ff;
+  border: 1px solid #559bc2;
   width: 80%;
   text-align: left;
 }
