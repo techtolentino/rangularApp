@@ -77,7 +77,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 html {
-  background-color: #d6e4e1; 
+  background: url('/images/geometry.png'); 
   min-height: 100%;
   height: auto;
 }
@@ -86,16 +86,16 @@ body  {
   font-family: Merriweather, serif;
   font-size: 1rem;
   line-height: 160%;
-  padding: 0 30px;
 }
 
 main {
   background: #fafdff;
-  border: 2px solid #fc756d;
-  width: 80%;
+  border: 2px solid #f84d59;
+  width: 500px;
   min-width: 310px;
-  max-width: 400px;
+  max-width: 90%;
   margin: 0 auto;
+  border-radius: 8px;
   padding: 20px 30px;
   text-align: center;
   -webkit-box-shadow: 0px 0px 4px 0px black;
@@ -107,7 +107,7 @@ main {
 @media all and (max-width: 400px) {
   main {
     width: 100%;
-     border-radius: 0;
+     border-radius: 8px;
   }
 }
 
@@ -143,9 +143,10 @@ h2{
 
 h3{ 
   margin-top: 0;
-  color: #bd3613;
+  color: #145266;
   line-height: 110%;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 p {
@@ -198,7 +199,7 @@ input[type=radio] {
 
 
 p.error {
-  color: #e40d00;
+  color: #f84d59;
   font-size: .8em;
   padding-top: 5px;
   font-style: italic;
@@ -244,7 +245,7 @@ p.error {
 
 .btn .btn-left { float: left; }
 .btn .btn-right { float: right; }
-.btn:hover { background-color: #DC322F; }
+.btn:hover { background-color: #f84d59; }
 
 .btn-list { background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-image: url(../images/icons/icon_checkmark.png); }
@@ -445,8 +446,9 @@ ul.awardslist li .btn-delete {
 
 nav {
   width: 100%;
-  background: transparent;
-  margin-bottom: 50px;
+  background: #f84d59;
+  margin-bottom: 150px;
+  padding: 10px 0;
 }
 
 nav .table {
@@ -458,7 +460,7 @@ nav li.branding a {
   font-size: 1.5em;
   text-align: left;
   background: transparent;
-  color: #f93e3b;
+  color: #f9f3df;
 }
 
 nav ul {
@@ -470,6 +472,10 @@ nav ul li {
   float: left;
   color: #145266;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a{
+  color: #f9c94b
 }
 
 nav ul li.user {
@@ -490,8 +496,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #c4d2d0;
-  color: #3979b4;
+  color: #d6e4e1;
 }
 
 .userinfo {
@@ -614,3 +619,5 @@ nav ul li a:hover {
 .checkinslist h1 { color: #AC3213; }
 .checkinslist h2 { color:#145569; }
 .checkinslist h3 { color: #657B83; }
+
+.page {margin-top: -60px;}
