@@ -8,6 +8,9 @@
 
 		<input type="email" name="email" placeholder="Email"
 			ng-model="user.email" ng-required="true">
+		
+		<p class="error formerror"
+			ng-show="message">{{message}}</p>
 
 		<p class="error" 
 			ng-show="myform.email.$invalid && myform.email.$touched">

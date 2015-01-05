@@ -11,6 +11,8 @@ myApp.controller('RegistrationController',
 			password: $scope.user.password
 		}).then(function(user){
 			$location.path('/meetings');
+		}, function(error){
+			$scope.message = error.toString();
 		});
 	}; //login
 
