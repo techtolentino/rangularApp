@@ -1,15 +1,12 @@
 myApp.controller('RegistrationController',
-	function($scope, $firebaseSimpleLogin, $location){
+	function($scope, $firebaseSimpleLogin, $location, Authentication){
 	// adding dependency to Controller 
 
-	var ref = new Firebase('https://meetingpoint.firebaseio.com/');
-	var simpleLogin = $firebaseSimpleLogin(ref);
+	
 
 	$scope.login = function() {
-		simpleLogin.$login('password', {
-			email: $scope.user.email,
-			password: $scope.user.password
-		}).then(function(user){
+		Authentication.login($scope.user)
+		.then(function(user){
 			$location.path('/meetings');
 		}, function(error){
 			$scope.message = error.toString();
