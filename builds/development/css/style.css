@@ -1,5 +1,5 @@
 /* Import fonts */
-@import url("http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather:400,300,700,900|Droid+Sans:400,700");
+
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -83,7 +83,7 @@ html {
 }
 
 body  {
-  font-family: Merriweather, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 160%;
 }
@@ -320,7 +320,7 @@ p.error {
 
 .search label {
   font-size: 1rem;
-  font-family: 'Bree Serif';
+  font-family: Arial, Helvetica, sans-serif;
   color: #576E75;
 }
 
@@ -438,7 +438,7 @@ ul.awardslist li {
   color: white;
   font-weight: normal;
   border-radius: 20px;
-  font-family: 'Bree Serif', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul.awardslist li:hover {
