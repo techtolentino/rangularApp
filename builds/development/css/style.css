@@ -73,11 +73,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 .cf:after {
-    clear: both;
+  clear: both;
 }
 
 html {
-  background: url('/images/geometry.png'); 
+  background-color: #b7f5fb; 
   min-height: 100%;
   height: auto;
 }
@@ -90,7 +90,6 @@ body  {
 
 main {
   background: #fafdff;
-  border: 2px solid #f84d59;
   width: 500px;
   min-width: 310px;
   max-width: 90%;
@@ -99,7 +98,7 @@ main {
   padding: 20px 30px;
   text-align: center;
   -webkit-box-shadow: 0px 0px 4px 0px black;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.2);
   position: relative;
   opacity: .95;
 }
@@ -199,7 +198,7 @@ input[type=radio] {
 
 
 p.error {
-  color: #f84d59;
+  color: #D81B60;
   font-size: .8em;
   padding-top: 5px;
   font-style: italic;
@@ -245,7 +244,7 @@ p.error {
 
 .btn .btn-left { float: left; }
 .btn .btn-right { float: right; }
-.btn:hover { background-color: #f84d59; }
+.btn:hover { background-color: #D81B60; }
 
 .btn-list { background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-image: url(../images/icons/icon_checkmark.png); }
@@ -446,7 +445,7 @@ ul.awardslist li .btn-delete {
 
 nav {
   width: 100%;
-  background: #f84d59;
+  background: #D81B60;
   margin-bottom: 150px;
   padding: 10px 0;
 }
@@ -475,7 +474,7 @@ nav ul li {
 }
 
 nav ul li a{
-  color: #f9c94b
+  color: #ecf9d8;
 }
 
 nav ul li.user {
