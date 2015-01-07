@@ -77,7 +77,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 html {
-  background-color: #b7f5fb; 
+  background-color: #24c2b6; 
   min-height: 100%;
   height: auto;
 }
@@ -198,7 +198,7 @@ input[type=radio] {
 
 
 p.error {
-  color: #D81B60;
+  color: #8800e7;
   font-size: .8em;
   padding-top: 5px;
   font-style: italic;
@@ -244,7 +244,7 @@ p.error {
 
 .btn .btn-left { float: left; }
 .btn .btn-right { float: right; }
-.btn:hover { background-color: #D81B60; }
+.btn:hover { background-color: #8800e7; }
 
 .btn-list { background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-image: url(../images/icons/icon_checkmark.png); }
@@ -445,7 +445,7 @@ ul.awardslist li .btn-delete {
 
 nav {
   width: 100%;
-  background: #D81B60;
+  background: #8800e7;
   margin-bottom: 150px;
   padding: 10px 0;
 }
@@ -506,7 +506,7 @@ nav ul li a:hover {
 }
 
 .userinfo a {
-  color: #349dff;
+  color: #f0f686;
   font-size: 0.8em;
 }
 
@@ -516,6 +516,7 @@ nav ul li a:hover {
 
 .user {
   font-size: 0.8em;
+  color: #c7ebf6;
 }
 
 .addmeeting {
