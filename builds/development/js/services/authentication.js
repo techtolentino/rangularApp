@@ -12,7 +12,11 @@ myApp.factory('Authentication', function($firebase,
 			});
 		}, //login
 
-		logout: function(){
+		register : function(user) {
+			return simpleLogin.$createUser(user.email, user.password);
+		}, //register
+
+		logout : function(){
 			return simpleLogin.$logout();
 		} //logout
 
@@ -20,7 +24,5 @@ myApp.factory('Authentication', function($firebase,
 	}; //myObject
 
 	return myObject;
-
-
 
 });
