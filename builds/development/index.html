@@ -24,9 +24,10 @@
 	<body>
 
 		<header>
-			<nav class="cf" ng-include="'views/nav.html'"
+			<nav class="cf" ng-include="'views/nav.html'" id="main_nav"
 				ng-controller="StatusController"></nav>
 		</header>
+			<div class="user_pic" ng-show="currentUser"></div>
 		<div class="page">
 			<div class="userinfo" ng-controller="StatusController" ng-show="currentUser">
 				<span class="user">Hi {{currentUser.firstname}}</span>
@@ -34,8 +35,11 @@
 				<br>
 			</div>
 			<main class="cf" ng-view>
-				
 			</main>
 		</div>
+		<div class="push"></div>
+		<footer>
+			
+		</footer>
 	</body>
 </html>

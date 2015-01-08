@@ -103,6 +103,16 @@ main {
   opacity: .95;
 }
 
+.user_pic {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: -45px;
+}
+
 @media all and (max-width: 400px) {
   main {
     width: 100%;
@@ -144,7 +154,6 @@ h3{
   margin-top: 0;
   color: #145266;
   line-height: 110%;
-  margin-bottom: 15px;
   margin-top: 15px;
 }
 
@@ -447,8 +456,8 @@ ul.awardslist li .btn-delete {
 nav {
   width: 100%;
   background: #8800e7;
-  margin-bottom: 150px;
-  padding: 10px 0;
+  padding: 25px 0;
+  height: 100px;
 }
 
 nav .table {
@@ -497,6 +506,12 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #d6e4e1;
+}
+
+footer {
+  height: 150px;
+  background-color: #fff794;
+  width: 100%;
 }
 
 .userinfo {
@@ -621,4 +636,12 @@ nav ul li a:hover {
 .checkinslist h2 { color:#145569; }
 .checkinslist h3 { color: #657B83; }
 
-.page {margin-top: -60px;}
+.push {
+  height: 150px;
+  width: 100%;
+}
+
+.page {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
