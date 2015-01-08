@@ -206,7 +206,9 @@ p.error {
 
 /*buttons*/
 .ng-invalid .btn {
-  background: gray;
+  border: 1px solid #808080;
+  color: #808080;
+  background-color: transparent;
 }
 
 /* Buttons */
@@ -223,7 +225,6 @@ p.error {
     white-space: nowrap;
     vertical-align: middle;
     cursor: pointer;
-    border: 1px solid transparent;
     border-radius: 4px;
     background: #C61C6F;
     color: #FCF4DC;
@@ -233,7 +234,7 @@ p.error {
     min-height: 28px;
     background-position: center center;
     background-repeat: no-repeat;
-    border: 2px solid white;
+    border: 1px solid #EEFAFB;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -244,7 +245,7 @@ p.error {
 
 .btn .btn-left { float: left; }
 .btn .btn-right { float: right; }
-.btn:hover { background-color: #8800e7; }
+.btn:hover { background-color: #8800e7; color: #EEFAFB; }
 
 .btn-list { background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-image: url(../images/icons/icon_checkmark.png); }
