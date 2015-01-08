@@ -207,7 +207,7 @@ input[type=radio] {
 
 
 p.error {
-  color: #8800e7;
+  color: #E84254;
   font-size: .8em;
   padding-top: 5px;
   font-style: italic;
@@ -215,8 +215,8 @@ p.error {
 
 /*buttons*/
 .ng-invalid .btn {
-  border: 1px solid #808080;
-  color: #808080;
+  border: 1px solid #E84254;
+  color: #E84254;
   background-color: transparent;
 }
 
@@ -237,7 +237,7 @@ p.error {
     border-radius: 4px;
     background: #C61C6F;
     color: #FCF4DC;
-    background-color: #26a7cf;
+    background-color: #24C2B6;
     background-size: 18px 18px;
     min-width: 28px;
     min-height: 28px;
@@ -254,7 +254,7 @@ p.error {
 
 .btn .btn-left { float: left; }
 .btn .btn-right { float: right; }
-.btn:hover { background-color: #8800e7; color: #EEFAFB; }
+.btn:hover { background-color: #E84254; color: #EEFAFB; }
 
 .btn-list { background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-image: url(../images/icons/icon_checkmark.png); }
@@ -455,7 +455,7 @@ ul.awardslist li .btn-delete {
 
 nav {
   width: 100%;
-  background: #8800e7;
+  background: #E84254;
   padding: 25px 0;
   height: 100px;
 }
@@ -510,7 +510,7 @@ nav ul li a:hover {
 
 footer {
   height: 150px;
-  background-color: #fff794;
+  background-color: #242424;
   width: 100%;
 }
 
@@ -565,11 +565,11 @@ footer {
 
 .meetings .meeting {
   display: inline-block;
-  background: #E4F8FC;
+  background: #EEFAFB;
   padding: 0 20px;
   margin: 5px 10px;
   border-radius: 4px;
-  border: 1px solid #559bc2;
+  border: 1px solid #24C2B6;
   width: 80%;
   text-align: left;
 }
@@ -643,5 +643,4 @@ footer {
 
 .page {
   margin-top: 60px;
-  margin-bottom: 100px;
 }
