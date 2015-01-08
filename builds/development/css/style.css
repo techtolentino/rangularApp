@@ -564,13 +564,14 @@ nav ul li a:hover {
   padding: 1px 8px;
   margin-bottom: .5em;
   margin-top: .5em;
+  float: right;
 }
 
 .meetings .meeting .text {
   display: inline-block;
   font-size: 0.8em;
   font-family: Arial, Helvetica, sans-serif;
-  /*vertical-align: bottom;*/
+  margin-top: 10px;
 }
 
 .meetings .meeting .text a{
