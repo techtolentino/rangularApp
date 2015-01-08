@@ -7,38 +7,43 @@ myApp.controller('MeetingsController',
 	var simpleLogin = $firebaseSimpleLogin(ref);
 
 	simpleLogin.$getCurrentUser().then(function(authUser){
-		var ref = new Firebase(FIREBASE_URL + '/users/' + authUser.uid + '/meetings');
-		var meetingsInfo = $firebase(ref);
-		var meetingsObj = $firebase(ref).$asObject();
-		var meetingsArray = $firebase(ref).$asArray();
 
-		meetingsObj.$loaded().then(function(data){
-			$scope.meetings = meetingsObj;
-		}); // meetings Object Loaded
+		if(authUser !== null){
 
-		meetingsArray.$loaded().then(function(data){
-			$rootScope.howManyMeetings = meetingsArray.length;
-		}); // meetings Array Loaded
+			var ref = new Firebase(FIREBASE_URL + '/users/' + authUser.uid + '/meetings');
+			var meetingsInfo = $firebase(ref);
+			var meetingsObj = $firebase(ref).$asObject();
+			var meetingsArray = $firebase(ref).$asArray();
 
-		meetingsArray.$watch(function(event){
-			$rootScope.howManyMeetings = meetingsArray.length;
-		});
+			meetingsObj.$loaded().then(function(data){
+				$scope.meetings = meetingsObj;
+			}); // meetings Object Loaded
 
+			meetingsArray.$loaded().then(function(data){
+				$rootScope.howManyMeetings = meetingsArray.length;
+			}); // meetings Array Loaded
 
-		$scope.meetingsInfo = meetingsInfo.$asObject();
-
-		$scope.addMeeting = function(){
-			meetingsInfo.$push({
-				name: $scope.meetingname,
-				date: Firebase.ServerValue.TIMESTAMP
-			}).then(function(){
-				$scope.meetingname = '';
+			meetingsArray.$watch(function(event){
+				$rootScope.howManyMeetings = meetingsArray.length;
 			});
-		}; //add meeting
 
-		$scope.deleteMeeting = function(key) {
-			meetingsInfo.$remove(key);
-		} //delete meeting
+
+			$scope.meetingsInfo = meetingsInfo.$asObject();
+
+			$scope.addMeeting = function(){
+				meetingsInfo.$push({
+					name: $scope.meetingname,
+					date: Firebase.ServerValue.TIMESTAMP
+				}).then(function(){
+					$scope.meetingname = '';
+				});
+			}; //add meeting
+
+			$scope.deleteMeeting = function(key) {
+				meetingsInfo.$remove(key);
+			} //delete meeting
+			
+		}
 
 	}); //get user
 

@@ -23,7 +23,7 @@
 		</form>
 
 
-		<h3>Your Meetings</h3>
+		<h3 ng-if="howManyMeetings > 0">Your Meetings</h3>
 		<div class="meeting" ng-repeat="(key, meeting) in meetings">
 			<button class="btn btn-delete tooltip"
 				ng-click="deleteMeeting(key)">
