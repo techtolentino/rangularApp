@@ -110,7 +110,6 @@ main {
   border: 1px solid #ffffff;
   background-color: #ffffff;
   margin: 0 auto;
-  margin-top: -45px;
   text-align: center;
   overflow: hidden;
 }
@@ -209,7 +208,7 @@ input[type=radio] {
 
 
 p.error {
-  color: #E84254;
+  color: #FF2E55;
   font-size: .8em;
   padding-top: 5px;
   font-style: italic;
@@ -217,8 +216,8 @@ p.error {
 
 /*buttons*/
 .ng-invalid .btn {
-  border: 1px solid #E84254;
-  color: #E84254;
+  border: 1px solid #FF2E55;
+  color: #FF2E55;
   background-color: transparent;
 }
 
@@ -256,7 +255,7 @@ p.error {
 
 .btn .btn-left { float: left; }
 .btn .btn-right { float: right; }
-.btn:hover { background-color: #E84254; color: #EEFAFB; }
+.btn:hover { background-color: #FF2E55; color: #EEFAFB; }
 
 .btn-list { background-image: url(../images/icons/icon_list.png); }
 .btn-checkin { background-image: url(../images/icons/icon_checkmark.png); }
@@ -457,7 +456,7 @@ ul.awardslist li .btn-delete {
 
 nav {
   width: 100%;
-  background: #E84254;
+  background: #FF2E55;
   padding: 25px 0;
   height: 100px;
 }
@@ -512,7 +511,7 @@ nav ul li a:hover {
 
 footer {
   height: 10%;
-  background-color: #0049c6;
+  background-color: #4e4e4e;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -647,5 +646,5 @@ footer {
 }
 
 .page {
-  margin-top: 60px;
+  margin-top: 25px;
 }
