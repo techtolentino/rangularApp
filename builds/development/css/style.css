@@ -104,13 +104,15 @@ main {
 }
 
 .user_pic {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   border-radius: 50px;
   border: 1px solid #ffffff;
   background-color: #ffffff;
   margin: 0 auto;
   margin-top: -45px;
+  text-align: center;
+  overflow: hidden;
 }
 
 @media all and (max-width: 400px) {
